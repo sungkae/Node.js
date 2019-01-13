@@ -32,8 +32,6 @@ var app = http.createServer(function (request, response) {
         response.writeHead(200);
         response.end(html);
       });
-
-
     } else {
       // ID 값이 있는 경우
       fs.readdir('./data', function (error, filelist) {
